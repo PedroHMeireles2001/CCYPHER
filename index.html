@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CCYPHER</title>
+        <link href="reset.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="card mb-3 mx-auto mt-5" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="https://picsum.photos/200/300" class="img-fluid rounded-start" alt="Júlio césar">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Cifra de césar</h5>
+                        <p class="card-text">A cifra de César é uma técnica de criptografia que substitui letras de uma mensagem original com outras letras deslocadas uma certa distância no alfabeto. É fácil de usar, mas também fácil de quebrar.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="container border p-2">
+                    <div class="input-group row g-3 mx-0 mb-2">
+                        <div class="col-sm-10">
+                            <input id="texto" class="form-control" type="text" placeholder="Texto"/>
+                        </div>
+                        <div class="col-sm">
+                            <input id="chave" class="form-control" type="number" placeholder="Chave" min="1" max="25"/>
+                        </div>
+                    </div>
+                    <div class="btn-group w-100">
+                        <button class="btn btn-primary" onclick="cypher(document.querySelector('#texto').value)">Cifrar</button>
+                        <button class="btn btn-primary" onclick="decypher(document.querySelector('#texto').value)">Decifrar</button>
+                    </div>
+                    <input id="resultado" readonly disabled class="form-control mt-3" type="text" placeholder="Resultado"/>
+                </div>
+            </section>
+        </main>
+        <script src="cesar.js"></script>
+    </body>
+</html>
+
