@@ -5,7 +5,7 @@ This is a simple implementation of the Caesar cipher, a method of encrypting mes
   - Decode messages using a specified shift value
   - User-friendly interface
 ## Usage
-1. Acess the github pages
+1. Acess the [ccypher](https://pedrohmeireles2001.github.io/CCYPHER/)
 2. Enter the message you wish to encode or decode and the shift value in the corresponding fields
 3. Click the "Encode" or "Decode" button to perform the desired operation
 4. The result will be displayed in the output field
